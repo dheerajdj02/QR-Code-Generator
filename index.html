@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>QR code Generator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div  id="container">
+            <div id="box">
+                <h3>QR Code Generator</h3>
+                <div class="inp">
+                    <input id="qr-text" type="url" placeholder="Text to Generate QR code" required/>
+                </div>
+                <br/>
+                <div class="button">
+                    <button class="qr-btn" onclick="generateQRCode( )">Create QR Code</button>
+                </div>
+                <br/>
+                <div>
+                    <p id="qr-result">This is QR code:</p>
+                </div>
+                <div class="canvas">
+                    <canvas id="qr-code"></canvas>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+        <script src="script.js" ></script>
+   </body>
+</html>
